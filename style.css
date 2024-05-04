@@ -18,8 +18,35 @@
     gap: 50px;
 }
 
+.header__item:last-child {
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
 .header__link {
 
+}
+
+.submenu {
+position: absolute;
+/* width: 100%; */
+top: 100%;
+left: 0;
+display: none;
+background-color: #fff;
+border: 1px solid yellow;
+padding: 10px;
+}
+
+.header__item:last-child:hover .submenu {
+  display: block;
+}
+
+.submenu__item {
+}
+.submenu__link {
 }
 
 .current::after {
